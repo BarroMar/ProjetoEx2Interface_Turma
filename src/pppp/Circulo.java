@@ -17,12 +17,12 @@ public class Circulo implements IcalcGeometria {
 
     @Override
     public double calcArea() {
-        return this raio * this raio;
+        return (Math.PI * Math.pow(this.raio, 2 ));
 
     }
 
     @Override
     public double calcPerimetro() {
-        return this raio * this raio;
+        return ( 2 * Math.PI * raio);
     }
 }

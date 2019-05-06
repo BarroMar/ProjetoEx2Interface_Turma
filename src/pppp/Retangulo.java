@@ -27,11 +27,12 @@ public class Retangulo implements IcalcGeometria {
 
     @Override
     public double calcArea() {
-        return this base * this altura;
+        return (this base * this altura);
     }
 
     @Override
     public double calcPerimetro() {
-        return this base * this altura;
+        return ((this base + this altura) / 2);
+
     }
 }
