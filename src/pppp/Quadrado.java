@@ -17,7 +17,7 @@ public class Quadrado implements IcalcGeometria{
 
     @Override
     public double calcArea() {
-        return this.lado * this lado;
+        return (this.lado * this lado);
     }
 
     @Override
