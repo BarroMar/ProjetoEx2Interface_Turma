@@ -1,6 +1,6 @@
 package pppp;
 
-public class Retangulo {
+public class Retangulo implements IcalcGeometria {
     public Retangulo(double base, double altura) {
         this.base = base;
         this.altura = altura;
@@ -24,4 +24,14 @@ public class Retangulo {
 
     private double base;
     private double altura;
+
+    @Override
+    public double calcArea() {
+        return this base * this altura;
+    }
+
+    @Override
+    public double calcPerimetro() {
+        return this base * this altura;
+    }
 }

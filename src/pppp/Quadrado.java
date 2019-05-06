@@ -1,6 +1,6 @@
 package pppp;
 
-public class Quadrado {
+public class Quadrado implements IcalcGeometria{
     public Quadrado(double lado) {
         this.lado = lado;
     }
@@ -15,4 +15,13 @@ public class Quadrado {
 
     private double lado;
 
+    @Override
+    public double calcArea() {
+        return this.lado * this lado;
+    }
+
+    @Override
+    public double calcPerimetro() {
+        return 0;
+    }
 }

@@ -1,6 +1,6 @@
 package pppp;
 
-public class Circulo {
+public class Circulo implements IcalcGeometria {
     public Circulo(double raio) {
         this.raio = raio;
     }
@@ -14,4 +14,15 @@ public class Circulo {
     }
 
     private double raio;
+
+    @Override
+    public double calcArea() {
+        return this raio * this raio;
+
+    }
+
+    @Override
+    public double calcPerimetro() {
+        return this raio * this raio;
+    }
 }
